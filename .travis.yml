@@ -4,7 +4,7 @@ services:
   - docker
   
 script:
-- docker run --rm dockcross/browser-asmjs > ./dockcross
+- docker run --rm dockcross/web-wasm > ./dockcross
 - chmod +x ./dockcross
 - mv ./dockcross ~/bin/
 - echo "emcc -v" >> doBuild.sh
