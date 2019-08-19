@@ -11,7 +11,7 @@ script:
 #- echo "chmod -R 777 *" >> doBuild.sh
 - echo "cd freetype-2.9.1" >> doBuild.sh
 - echo "./autogen.sh" >> doBuild.sh
-- echo "emconfigure ./configure --host=asmjs" >> doBuild.sh
+- echo "./configure --host=asmjs" >> doBuild.sh
 - echo "emmake make" >> doBuild.sh
 - echo "emcc -I ./include -o ../freetype.o ../freetype.c" >> doBuild.sh
 - echo "find ." >> doBuild.sh
