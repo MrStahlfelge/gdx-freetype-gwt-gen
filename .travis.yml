@@ -8,7 +8,6 @@ script:
 - chmod +x ./dockcross
 - mv ./dockcross ~/bin/
 - chmod +x doBuild.sh
-- sudo apt-get install -y zlib1g-dev
 - dockcross bash -c '&& ./doBuild.sh'
 
 after_success:
