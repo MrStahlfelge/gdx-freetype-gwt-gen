@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp freetype-2.9.1 freetype-2.9.1-native
+cp -r freetype-2.9.1 freetype-2.9.1-native
 cd freetype-2.9.1-native
 ./autogen.sh
 ./configure
