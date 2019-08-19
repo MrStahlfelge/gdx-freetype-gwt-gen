@@ -8,7 +8,7 @@ script:
 - chmod +x ./dockcross
 - mv ./dockcross ~/bin/
 - chmod +x doBuild.sh
-- dockcross bash -c 'sudo apt-get install -y zlib1g && ./doBuild.sh'
+- dockcross bash -c 'sudo apt-get install -y zlib1g-dev && ./doBuild.sh'
 
 after_success:
 - curl -L -k https://github.com/c4milo/github-release/releases/download/v1.0.8/github-release_v1.0.8_linux_amd64.tar.gz | tar -xz
